@@ -1,0 +1,18 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"default_line_ending": "unix",
+	"font_face": "Consolas",
+	"font_options":
+	[
+		"directwrite"
+	],
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 3,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

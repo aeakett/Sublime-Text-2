@@ -1,0 +1,9 @@
+<snippet>
+   <content><![CDATA[
+<cfquery name="${1:qName}" datasource="#request.dsn#" username="#request.uname#" password="#request.passwd#">
+   $2
+</cfquery>
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>cfq</tabTrigger>
+</snippet>

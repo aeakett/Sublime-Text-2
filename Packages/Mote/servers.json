@@ -1,0 +1,20 @@
+{
+    "mitig":{
+        "connection_string": "aeakett@mitig",
+        "idle_recursive": true,
+        "default_path": "web/apps"
+    },
+    "SERVER_NICKNAME2":{
+        "connection_string": "USERNAME@HOSTNAME_OR_IP",
+        "password":"MYPASSWORD",
+        "idle_recursive": false,
+        "default_path": "iniital/path/to/open/to"
+    },
+    "SERVER_NICKNAME3":{
+        "connection_string": "USERNAME@HOSTNAME_OR_IP",
+        "password":"MYPASSWORD",
+        "private_key":"C:\\PATH\\TO\\PRIVATE\\KEY.ppk",
+        "idle_recursive": false,
+        "default_path": "iniital/path/to/open/to"
+    }
+}

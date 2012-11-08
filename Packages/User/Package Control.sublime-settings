@@ -1,0 +1,14 @@
+{
+	"auto_upgrade_last_run": 1352392872,
+	"installed_packages":
+	[
+		"ColdFusion",
+		"ColdFusion.org",
+		"Mote",
+		"Package Control",
+		"Print to HTML",
+		"RegReplace",
+		"Sass",
+		"WordCount"
+	]
+}

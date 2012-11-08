@@ -1,0 +1,7 @@
+<snippet>
+   <content><![CDATA[
+<cfdump var="#$1#" />$2
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>cfd</tabTrigger>
+</snippet>

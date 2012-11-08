@@ -1,0 +1,7 @@
+[
+   {
+      "caption": "Reg Replace: Replace french characters with entities",
+      "command": "reg_replace",
+      "args": {"replacements": ["eacute","Eacute","egrave","Egrave","ecirc","Ecirc","agrave","Agrave","Aacute","aacute","Acirc","acirc","Auml","auml","ccedil","Ccedil","Euml","euml","Igrave","igrave","Iacute","iacute","Icirc","icirc","iuml","Iuml","Ograve","ograve","oacute","Oacute","Ocirc","ocirc","ouml","Ouml","oelig","OElig","ugrave","uacute","ucirc","uuml","Ugrave","Uacute","Ucirc","Uuml","rsquo","lsquo","rdquo","ldquo","laquo","raquo","lsaquo","rsaquo"]}
+   }
+]

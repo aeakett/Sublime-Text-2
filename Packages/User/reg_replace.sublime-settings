@@ -1,0 +1,99 @@
+{
+    "replacements": {
+        "eacute": {"find": "é","replace": "&eacute;","greedy": true,"case": true},
+        "Eacute": {"find": "É","replace": "&Eacute;","greedy": true,"case": true},
+        "egrave": {"find": "è","replace": "&egrave;","greedy": true,"case": true},
+        "Egrave": {"find": "È","replace": "&Egrave;","greedy": true,"case": true},
+        "ecirc": {"find": "ê","replace": "&ecirc;","greedy": true,"case": true},
+        "Ecirc": {"find": "Ê","replace": "&Ecirc;","greedy": true,"case": true},
+        "agrave": {"find": "à","replace": "&agrave;","greedy": true,"case": true},
+        "Agrave": {"find": "À","replace": "&Agrave;","greedy": true,"case": true},
+        "Aacute": {"find": "Á","replace": "&Aacute;","greedy": true,"case": true},
+        "aacute": {"find": "á","replace": "&aacute;","greedy": true,"case": true},
+        "Acirc": {"find": "Â","replace": "&Acirc;","greedy": true,"case": true},
+        "acirc": {"find": "â","replace": "&acirc;","greedy": true,"case": true},
+        "Auml": {"find": "Ä","replace": "&Auml;","greedy": true,"case": true},
+        "auml": {"find": "ä","replace": "&auml;","greedy": true,"case": true},
+        "ccedil": {"find": "ç","replace": "&ccedil;","greedy": true,"case": true},
+        "Ccedil": {"find": "Ç","replace": "&Ccedil;","greedy": true,"case": true},
+        "Euml": {"find": "Ë","replace": "&Euml;","greedy": true,"case": true},
+        "euml": {"find": "ë","replace": "&euml;","greedy": true,"case": true},
+        "Igrave": {"find": "Ì","replace": "&Igrave;","greedy": true,"case": true},
+        "igrave": {"find": "ì","replace": "&igrave;","greedy": true,"case": true},
+        "Iacute": {"find": "Í","replace": "&Iacute;","greedy": true,"case": true},
+        "iacute": {"find": "í","replace": "&iacute;","greedy": true,"case": true},
+        "Icirc": {"find": "Î","replace": "&Icirc;","greedy": true,"case": true},
+        "icirc": {"find": "î","replace": "&icirc;","greedy": true,"case": true},
+        "iuml": {"find": "ï","replace": "&iuml;","greedy": true,"case": true},
+        "Iuml": {"find": "Ï","replace": "&Iuml;","greedy": true,"case": true},
+        "Ograve": {"find": "Ò","replace": "&Ograve;","greedy": true,"case": true},
+        "ograve": {"find": "ò","replace": "&ograve;","greedy": true,"case": true},
+        "oacute": {"find": "ó","replace": "&oacute;","greedy": true,"case": true},
+        "Oacute": {"find": "Ó","replace": "&Oacute;","greedy": true,"case": true},
+        "Ocirc": {"find": "Ô","replace": "&Ocirc;","greedy": true,"case": true},
+        "ocirc": {"find": "ô","replace": "&ocirc;","greedy": true,"case": true},
+        "ouml": {"find": "ö","replace": "&ouml;","greedy": true,"case": true},
+        "Ouml": {"find": "Ö","replace": "&Ouml;","greedy": true,"case": true},
+        "oelig": {"find": "œ","replace": "&oelig;","greedy": true,"case": true},
+        "OElig": {"find": "Œ","replace": "&OElig;","greedy": true,"case": true},
+        "ugrave": {"find": "ù","replace": "&ugrave;","greedy": true,"case": true},
+        "uacute": {"find": "ú","replace": "&uacute;","greedy": true,"case": true},
+        "ucirc": {"find": "û","replace": "&ucirc;","greedy": true,"case": true},
+        "uuml": {"find": "ü","replace": "&uuml;","greedy": true,"case": true},
+        "Ugrave": {"find": "Ù","replace": "&Ugrave;","greedy": true,"case": true},
+        "Uacute": {"find": "Ú","replace": "&Uacute;","greedy": true,"case": true},
+        "Ucirc": {"find": "Û","replace": "&Ucirc;","greedy": true,"case": true},
+        "Uuml": {"find": "Ü","replace": "&Uuml;","greedy": true,"case": true},
+        "rsquo": {"find": "’","replace": "&rsquo;","greedy": true,"case": true},
+        "lsquo": {"find": "‘","replace": "&lsquo;","greedy": true,"case": true},
+        "rdquo": {"find": "”","replace": "&rdquo;","greedy": true,"case": true},
+        "ldquo": {"find": "“","replace": "&ldquo;","greedy": true,"case": true},
+        "laquo": {"find": "«","replace": "&laquo;","greedy": true,"case": true},
+        "raquo": {"find": "»","replace": "&raquo;","greedy": true,"case": true},
+        "lsaquo": {"find": "‹","replace": "&lsaquo;","greedy": true,"case": true},
+        "rsaquo": {"find": "›","replace": "&rsaquo;","greedy": true,"case": true}
+    },
+
+    // If on_save is true, RegReplace will search through the file patterns listed below right before a file is saved,
+    // if the file name matches a file pattern, the sequence will be applied before the file is saved.
+    // RegReplace will apply all sequences that apply to a given file in the order they appear below.
+    "on_save": false,
+
+    // Highlight visual settings
+    "on_save_highlight_scope": "invalid",
+    "on_save_highlight_style": "outline",
+
+    // on_save replacements
+    "on_save_sequences": [
+        // An example on_save event that removes dangling commas from json files
+        // - file_regex: an array of regex strings that must match the file for the sequence to be applied
+        // - case: regex case sensitivity (true|false) false is default (this setting is optional)
+        // - file_pattern: an array of file patterns that must match for the sequence to be applied
+        // - sequence: an array of replacement definitions to be applied on saving the file
+        // - multi_pass: perform multiple passes on file to catch all regex instances
+        {
+            "file_regex": [".*\\.sublime-(settings|commands|menu|keymap|mousemap|theme|build|project|completions|commands)"],
+            "file_pattern": ["*.json"],
+            "sequence": ["remove_json_dangling_commas"]
+        },
+        // An example on_save_sequence that targets all files and trims trailing spaces
+        // - file_pattern: an array of file patterns that must match for the sequence to be applied
+        // - sequence: an array of replacement definitions to be applied on saving the file
+        {"file_pattern": ["*"], "sequence": ["remove_trailing_spaces"]}
+    ],
+
+    // Show replace results in panel
+    "results_in_panel": false,
+
+    // Maximum sweep threshold for multi-pass
+    "multi_pass_max_sweeps": 100,
+
+    // Color? (scope)
+    "find_highlight_color": "invalid",
+
+    // Highlight style? (outline|solid|underline)
+    "find_highlight_style": "outline",
+
+    // Search under selection(s) if and only if exists
+    "selection_only": false
+}

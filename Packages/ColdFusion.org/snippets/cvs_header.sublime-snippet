@@ -1,0 +1,11 @@
+<snippet>
+   <content><![CDATA[
+<!---
+   \$Author\$
+   \$Date\$
+   \$Revision\$
+--->
+]]></content>
+   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+   <tabTrigger>header</tabTrigger>
+</snippet>
